@@ -1,0 +1,12 @@
+{"GUID":"8342fd","Name":"Custom_Model","Transform":{"posX":28.0831451,"posY":1.05078447,"posZ":13.2239828,"rotX":-5.10464247E-07,"rotY":149.999985,"rotZ":3
+.955832E-06,"scaleX":0.625,"scaleY":0.625,"scaleZ":0.625},"Nickname":"Academy Pilot","Description":"","GMNotes":"","ColorDiffuse":{"r":0.9999998,"g":0.9921
+60261,"b":0.9999998},"LayoutGroupSortIndex":0,"Value":0,"Locked":false,"Grid":true,"Snap":true,"IgnoreFoW":false,"MeasureMovement":false,"DragSelectable":t
+rue,"Autoraise":true,"Sticky":true,"Tooltip":true,"GridProjection":false,"HideWhenFaceDown":false,"Hands":false,"CustomMesh":{"MeshURL":"http://cloud-3.ste
+amusercontent.com/ugc/916925021432074935/70592DBBF3C74A03755DD17E7563FED14147BE69/","DiffuseURL":"http://cloud-3.steamusercontent.com/ugc/91805283251491652
+4/706A993DC99392B5F3E6D52AD32F87D4A28E55B9/","NormalURL":"","ColliderURL":"{verifycache}http://cloud-3.steamusercontent.com/ugc/787480374926351622/9FA07C37
+B1615A416F306081D9152902A9BFE9EE/","Convex":true,"MaterialIndex":1,"TypeIndex":1,"CustomShader":{"SpecularColor":{"r":0.8745098,"g":0.8117647,"b":0.7450980
+54},"SpecularIntensity":0.0,"SpecularSharpness":3.0,"FresnelStrength":0.1},"CastShadows":true},"LuaScript":"-- Save self state\nfunction onSave()\n    loca
+l state = {shipData=self.getTable(\"Data\")}\n    return JSON.encode(state)\nend\n\n-- Restore self state\nfunction onLoad(savedData)\n    --print(\"OnLoad
+: \".. self.getName() .. \" \" .. savedData)\n    if savedData ~= \"\" then\n        self.setTable(\"Data\", JSON.decode(savedData).shipData)\n    end\nend
+","LuaScriptState":"{\"shipData\":{\"actSet\":[\"F\",\"E\",\"BR\"],\"Faction\":2,\"moveSet\":[\"wtl1\",\"wtr1\",\"wtl2\",\"bbl2\",\"bs2\",\"bbr2\",\"wtr2\"
+,\"wtl3\",\"wbl3\",\"bs3\",\"wbr3\",\"wtr3\",\"rk3\",\"ws4\",\"rk4\",\"ws5\"],\"Size\":1}}","XmlUI":""}
