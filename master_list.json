@@ -1,10 +1,6 @@
 {
   "objects": [
     {"name":"Academy Pilot", "url":"https://raw.githubusercontent.com/socantre/temp/main/test_object.json"},
-    {"name":"Academy Pilot 2", "url":"https://raw.githubusercontent.com/socantre/temp/main/test_object.json"},
-    {"name":"Academy Pilot 3", "url":"https://raw.githubusercontent.com/socantre/temp/main/test_object.json"},
-    {"name":"Academy Pilot 4", "url":"https://raw.githubusercontent.com/socantre/temp/main/test_object.json"},
-    {"name":"Academy Pilot 5", "url":"https://raw.githubusercontent.com/socantre/temp/main/test_object.json"},
-    {"name":"Academy Pilot 6", "url":"https://raw.githubusercontent.com/socantre/temp/main/test_object.json"}
+    {"name":"Core Campaign", "url":"https://raw.githubusercontent.com/socantre/temp/main/test_object%202.json"}
   ]
 }
