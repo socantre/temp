@@ -1,0 +1,48 @@
+<Defaults>
+<Text color="white" fontSize="16"/>
+</Defaults>
+
+<VerticalLayout
+  visibility="Admin"
+  color="black" outlineSize="1 1" outline="#303030"
+  rectAlignment="UpperRight" width="50" height="50" offsetXY="0 -160">
+    <Button icon="download" tooltipPosition="Left" tooltip="Scenario Loader"
+      onClick="onClick_toggleUi"
+      color="black"/>
+</VerticalLayout>
+
+<!--  allowDragging="true" returnToOriginalPositionWhenReleased="false" -->
+
+<VerticalLayout
+  id="load_ui"
+  active="false"
+  visibility="Admin"
+  width="800" height="780"
+  color="black" outlineSize="1 1" outline="#303030">
+    <HorizontalLayout minHeight="50" preferredHeight="50" flexibleHeight="0">
+        <Button icon="refresh"
+          tooltip="Refresh List" tooltipPosition="Right"
+          onClick="onClick_refreshList"
+          minWidth="50" preferredWidth="50" flexibleWidth="0" color="black"/>
+        <Text minWidth="200" flexibleWidth="100" fontSize="36">Loadable Items</Text>
+        <Button icon="close" tooltip="Close" tooltipPosition="Left"
+          onClick="onClick_toggleUi"
+          minWidth="50" preferredHeight="50" flexibleWidth="0" color="black"/>
+    </HorizontalLayout>
+    <VerticalScrollView
+      color="transparent" minHeight="100" flexibleHeight="100">
+        <Panel id="ui_update_height" height="24">
+            <VerticalLayout id="ui_update_point">
+                <Text>Please refresh to see available items.</Text>
+            </VerticalLayout>
+        </Panel>
+    </VerticalScrollView>
+
+    <Panel color="rgb(0,0,0)" minHeight="50" preferredHeight="50" flexibleHeight="0" active="false">
+        <Button id="load_buttion" onClick="onClick_load">Load:</Button>
+        <HorizontalLayout id="progress_display" active="false">
+            <ProgressBar percentage="0"/>
+            <Button onClick="onClick_cancel">Cancel</Button>
+        </HorizontalLayout>
+    </Panel>
+</VerticalLayout>

@@ -1,0 +1,14 @@
+<Defaults>
+    <Button fontSize="50"/>
+    <Toggle scale="1 1"/>
+</Defaults>
+
+<VerticalLayout position="0 0 -53" scale="0.25 0.1" width="300" height="900" >
+    <Button id="button1" onClick="button1_click">Place Obstacles</Button>
+    <Button id="button2" onClick="button2_click">Delete Obstacles</Button>
+    <Button id="button3" onClick="button3_click">Misc. Debug Function</Button>
+
+    <Toggle id="toggle1" onValueChanged="toggle_asteroids" isOn="true">Asteroids</Toggle>
+    <Toggle id="toggle2" onValueChanged="toggle_debris" isOn="true">Debris</Toggle>
+    <Toggle id="toggle3" onValueChanged="toggle_gas" isOn="true">Gas Clouds</Toggle>
+</VerticalLayout>
